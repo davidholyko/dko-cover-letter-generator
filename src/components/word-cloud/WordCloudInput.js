@@ -15,7 +15,13 @@ class WordCloudInput extends Component {
 
   convertJobDescription = () => {
     event.preventDefault()
-    console.log(convertJobDescription(this.state.jobDescription))
+
+    console.log(this.props)
+
+    const { updateWordCloud } = this.props
+    const { jobDescription } = this.state
+    const convertedJobDescription = convertJobDescription(jobDescription)
+    updateWordCloud(convertedJobDescription)
   }
 
   render () {

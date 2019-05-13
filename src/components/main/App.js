@@ -9,7 +9,7 @@ import SignIn from '../auth/SignIn'
 import SignOut from '../auth/SignOut'
 import ChangePassword from '../auth/ChangePassword'
 
-import WordCloudInput from '../word-cloud/WordCloudInput'
+import WordCloud from '../word-cloud/WordCloud'
 
 import { AlertList } from 'react-bs-notifier'
 
@@ -78,7 +78,7 @@ class App extends Component {
             <ChangePassword alert={this.alert} user={user} />
           )} />
           <Route exact path='/' render={() => (
-            <WordCloudInput alert={this.alert} />
+            <WordCloud alert={this.alert} />
           )} />
         </main>
       </React.Fragment>

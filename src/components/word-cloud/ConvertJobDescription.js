@@ -19,7 +19,10 @@ export const convertJobDescription = words => {
     return acc
   }, {})
 
+  // convert object to array
+  output = Object.entries(output)
+
+  console.log(output)
+
   return output
 }
-
-// console.log(wordCloudInput('The the CUP harry table table coffee cup'))
